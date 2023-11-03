@@ -21,10 +21,9 @@ function ProfilePage() {
     return(
         <div className="py-11">
             
-            <ProfileHeader/>   
 
             <div className="block md:w-3/4 md:mx-auto
-            ml-4 mt-10">
+             mt-10">
 
                 <div className="w-11/12 block h-52 bg-dark-border mx-auto">
                 </div>
@@ -35,7 +34,8 @@ function ProfilePage() {
                     <span className={`h-20 z-0 bg-darkest-border absolute ${pageSection == 0 ? '-ml-40 w-28' : 'ml-28 w-36'} transition-all duration-300 rounded-lg`}></span>
                 </div>
 
-                <form action="" className="md:w-2/3 md:block mx-auto">
+                <form action="" className="md:w-2/3 md:mx-auto md:block
+                                           ml-5 mx-auto">
                     
                     <ul className="mt-10 text-white">
                         <li>

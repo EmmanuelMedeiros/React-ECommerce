@@ -11,6 +11,7 @@ import { CommerceProvider } from './components/context/CommerceContext';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ProfilePage from './components/user/ProfilePage';
+import ProfileHeader from './components/user/ProfileHeader';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
     },
     {
       path: '/profile',
-      element: <ProfilePage/>
+      element: <ProfileHeader/>
     }
   ]
   }

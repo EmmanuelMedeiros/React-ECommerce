@@ -27,8 +27,6 @@ function WishList() {
     return(
         <div>
 
-            <ProfileHeader/>
-
             {productList.map(product => (
                 <div className="md:w-3/5 
                 px-3 text-white my-5 bg-dark-border w-11/12 block mx-auto rounded-md py-3">

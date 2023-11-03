@@ -10,16 +10,16 @@ export const CommerceProvider = ({children}) => {
     let profilePage = [
         {
             actualPage: "profilePage",
-            section: "myAccount"
+            section: ["myAccount", 'changePwd']
         },
         {
-            actualPage: "changePwd",
-            section: "unique"
+            actualPage: "wishList",
+            section: ["unique"]
         }
     ]
 
     const [user, setUser] = useState(defaultUser)
-    const [profPage, setProfPage] = useState(profilePage[1])
+    const [profPage, setProfPage] = useState(profilePage[0])
 
-    return <CommerceContext.Provider value={{user, setUser, profPage, setProfPage}}>{children}</CommerceContext.Provider>
+    return <CommerceContext.Provider value={{user, setUser, profPage, setProfPage, profilePage}}>{children}</CommerceContext.Provider>
 }
