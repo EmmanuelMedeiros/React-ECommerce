@@ -19,6 +19,10 @@ code {
     monospace;
 }
 
+.material-icons.md-white {
+  color: rgb(163, 163, 163);
+}
+
 @media only screen and (min-width: 768px) {
 
   body {
